@@ -1,6 +1,4 @@
 /* add home page styles here */
-body {
-}
 
 h1 {
     font-size: 75px;
@@ -19,15 +17,29 @@ li {
 }
 
 .centered {
-    width: 200px;
+    width: 400px;
     margin-right: auto;
     margin-left: auto;
 
 }
 
 img { 
-    align-items: center;
-    width: 250px;
+    width: 200px;
     margin:50px ;
-    
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked + img {
+    border: red 2px solid;
+    border-radius: 15px; 
+}
+
+input[type=radio]:not(:checked) + img:hover {
+    opacity: 50%;
+    cursor: pointer;
 }
