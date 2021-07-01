@@ -1,1 +1,33 @@
 /* add home page styles here */
+body {
+}
+
+h1 {
+    font-size: 75px;
+    border: solid black 1px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+li {
+    font-size: 20px;
+}
+
+#big-rules {
+    font-size: 25px;
+}
+
+.centered {
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+img { 
+    align-items: center;
+    width: 250px;
+    margin:50px ;
+    
+}
