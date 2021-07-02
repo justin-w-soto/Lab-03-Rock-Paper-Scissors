@@ -32,7 +32,7 @@ playButton.addEventListener('click', ()=>{
     //console.log(computerThrow);
     
     const isWinner = didUserWin(userThrow, computerThrow);
-
+ 
     if (isWinner === 'You Win!'){
         wins++;
     } else if (isWinner === 'You Lose!') {
@@ -44,4 +44,5 @@ playButton.addEventListener('click', ()=>{
     lossesSpan.textContent = losses;
     matchDraw.textContent = draws;
 });
- 
+
+
