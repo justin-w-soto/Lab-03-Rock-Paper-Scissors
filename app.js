@@ -5,12 +5,13 @@ import { didUserWin } from './utils.js';
 const playButton = document.querySelector('#play');
 const winsSpan = document.querySelector('#total-wins');
 const lossesSpan = document.querySelector('#total-losses');
+const matchDraw = document.querySelector('#total-draws');
 
 // initialize state
 
 let wins = 0;
 let losses = 0;
-
+let draws = 0;
 // set event listeners 
 
 playButton.addEventListener('click', ()=>{
@@ -30,18 +31,18 @@ playButton.addEventListener('click', ()=>{
     }
     console.log(computerThrow);
     // check who won
+    
     const isWinner = didUserWin(userThrow, computerThrow);
 
-    if (isWinner){
+    if (isWinner === 'You Win!'){
         wins++;
-    } else {
+    } else if (isWinner === 'You Lose!') {
         losses++;
+    } else {
+        draws++;
     }
     winsSpan.textContent = wins;
     lossesSpan.textContent = losses;
+    matchDraw.textContent = draws;
 });
- // get user input
-
-
-  // use user input to update state 
-  // update DOM to reflect the new state
+ 

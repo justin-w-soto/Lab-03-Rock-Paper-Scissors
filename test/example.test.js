@@ -3,21 +3,30 @@
 import { didUserWin } from '../utils.js';
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const win = didUserWin('rock', 'scissors');
-    const win2 = didUserWin('scissors', 'paper');
-    const win3 = didUserWin('paper', 'rock');
+// test('testing my function', (expect) => {
+  
+//     // Set up your arguments and expectations
+//     const expected = 'You Win!';
 
-    const loss = didUserWin(); 
     
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = true;
+//     //Act 
+//     // Call the function you're testing and set the result to a const
+//     const actual = didUserWin('rock', 'scissors');
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.equal(win, true);
-    expect.equal(loss, false);
+//     //Expect
+//     // Make assertions about what is expected versus the actual result
+//     expect.equal(expected, actual);
+    
+// });
+
+// test('rock vs paper', (expect) => {
+//     const expected = 'You Lose!';
+//     const actual = didUserWin('rock', 'paper');
+//     expect.equal(expected, actual);
+// });
+
+test ('rock vs rock', (expect) => {
+    const expected = 'draw';
+    const actual = didUserWin('rock', 'rock');
+    expect.equal(expected, actual);
 });
