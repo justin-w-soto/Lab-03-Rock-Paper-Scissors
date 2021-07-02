@@ -1,6 +1,6 @@
 export function didUserWin(userThrow, computerThrow) {
     if (userThrow === computerThrow) {
-        'draw';
+        return 'draw';
     } if (userThrow === 'rock' && computerThrow === 'scissors') {
         return 'You Win!';
     } if (userThrow === 'rock' && computerThrow === 'paper') {

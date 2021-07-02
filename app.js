@@ -1,7 +1,6 @@
 
 import { didUserWin } from './utils.js';
 
-
 const playButton = document.querySelector('#play');
 const winsSpan = document.querySelector('#total-wins');
 const lossesSpan = document.querySelector('#total-losses');
@@ -12,6 +11,7 @@ const matchDraw = document.querySelector('#total-draws');
 let wins = 0;
 let losses = 0;
 let draws = 0;
+
 // set event listeners 
 
 playButton.addEventListener('click', ()=>{
@@ -29,8 +29,7 @@ playButton.addEventListener('click', ()=>{
     if (randomNum === 2) {
         computerThrow = 'scissors';
     }
-    console.log(computerThrow);
-    // check who won
+    //console.log(computerThrow);
     
     const isWinner = didUserWin(userThrow, computerThrow);
 
