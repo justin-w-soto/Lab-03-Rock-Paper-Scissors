@@ -69,3 +69,7 @@ input[type=radio]:not(:checked) + img:hover {
     font-size:30px;
     
 }
+
+#bottom-div {
+    margin: 100px
+}
